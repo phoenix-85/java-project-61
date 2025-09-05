@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.StringJoiner;
 
 import static hexlet.code.Engine.game;
+import static hexlet.code.Engine.MAX_ROUNDS;
 
 public class Progression {
     private static final int START_VALUE = 1;

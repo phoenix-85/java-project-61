@@ -3,6 +3,7 @@ package hexlet.code;
 import java.util.Random;
 
 import static hexlet.code.Engine.game;
+import static hexlet.code.Engine.MAX_ROUNDS;
 
 public class Prime {
     private static final int START_VALUE = 1;

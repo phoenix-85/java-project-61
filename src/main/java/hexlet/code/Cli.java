@@ -11,12 +11,4 @@ public class Cli {
         name = new Scanner(System.in).next();
         System.out.println("Hello, " + name + "!");
     }
-
-    public static void congrats() {
-        System.out.println("Congratulations, " + name + "!");
-    }
-
-    public static void loses() {
-        System.out.println("Let's try again, " + name + "!");
-    }
 }

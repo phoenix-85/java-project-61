@@ -1,35 +1,24 @@
 package hexlet.code;
 
 import java.util.Random;
-import java.util.Scanner;
 
-import static hexlet.code.Cli.*;
+import static hexlet.code.Engine.*;
 
 public class Even {
+    private static final int START_VALUE = 1;
+    private static final int END_VALUE = 99;
+
     public static void gameEven() {
-        greeting();
-        System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
+        var question = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+        String[] problems = new String[MAX_ROUNDS];
+        String[] solutions = new String[MAX_ROUNDS];
 
-        boolean lose = false;
-
-        for (var i = 1; i <= 3; i++) {
-            var num = new Random().nextInt(99) + 1;
-            System.out.println("Question: " + num);
-            var answer = new Scanner(System.in).next();
-            var rightAnswer = num % 2 == 0 ? "yes" : "no";
-            if (answer.equals(rightAnswer)) {
-                System.out.println("Correct!");
-            } else {
-                System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + rightAnswer + "'");
-                lose = true;
-                break;
-            }
+        for (var i = 0; i < MAX_ROUNDS; i++) {
+            int num = START_VALUE + new Random().nextInt(END_VALUE);
+            problems[i] = Integer.toString(num);
+            solutions[i] = (num % 2 == 0) ? "yes" : "no";
         }
 
-        if (lose) {
-            loses();
-        } else {
-            congrats();
-        }
+        game(question, problems, solutions);
     }
 }

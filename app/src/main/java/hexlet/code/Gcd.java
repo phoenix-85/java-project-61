@@ -5,8 +5,8 @@ import java.util.Random;
 import static hexlet.code.Engine.game;
 
 public class Gcd {
-    private static final int const START_VALUE = 20;
-    private static final int const END_VALUE = 79;
+    private static final int START_VALUE = 20;
+    private static final int END_VALUE = 79;
 
     private static int gcd(int a, int b) {
         return (b == 0) ? a : gcd(b,a % b);

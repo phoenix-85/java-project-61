@@ -6,8 +6,8 @@ import java.util.StringJoiner;
 import static hexlet.code.Engine.game;
 
 public class Calc {
-    private static final int const START_VALUE = 1;
-    private static final int const END_VALUE = 100;
+    private static final int START_VALUE = 1;
+    private static final int END_VALUE = 100;
 
     public static void gameCalc() {
         var question = "What is the result of the expression?";

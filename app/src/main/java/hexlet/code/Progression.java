@@ -6,12 +6,12 @@ import java.util.StringJoiner;
 import static hexlet.code.Engine.game;
 
 public class Progression {
-    private static final int const START_VALUE = 1;
-    private static final int const END_VALUE = 99;
-    private static final int const START_INCREMENT_VALUE = 1;
-    private static final int const END_INCREMENT_VALUE = 9;
-    private static final int const MIN_PROGRESSION_LENGTH = 5;
-    private static final int const MAX_PROGRESSION_LENGTH = 11;
+    private static final int START_VALUE = 1;
+    private static final int END_VALUE = 99;
+    private static final int START_INCREMENT_VALUE = 1;
+    private static final int END_INCREMENT_VALUE = 9;
+    private static final int MIN_PROGRESSION_LENGTH = 5;
+    private static final int MAX_PROGRESSION_LENGTH = 11;
 
     public static void gameProgression() {
         var question = "What number is missing in the progression?";

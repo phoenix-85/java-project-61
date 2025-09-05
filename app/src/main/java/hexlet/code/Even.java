@@ -2,11 +2,11 @@ package hexlet.code;
 
 import java.util.Random;
 
-import static hexlet.code.Engine.*;
+import static hexlet.code.Engine.game;
 
 public class Even {
-    private static final int START_VALUE = 1;
-    private static final int END_VALUE = 99;
+    private static final int const START_VALUE = 1;
+    private static final int const END_VALUE = 99;
 
     public static void gameEven() {
         var question = "Answer 'yes' if the number is even, otherwise answer 'no'.";

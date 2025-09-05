@@ -3,11 +3,11 @@ package hexlet.code;
 import java.util.Random;
 import java.util.StringJoiner;
 
-import static hexlet.code.Engine.*;
+import static hexlet.code.Engine.game;
 
 public class Calc {
-    private static final int START_VALUE = 1;
-    private static final int END_VALUE = 100;
+    private static final int const START_VALUE = 1;
+    private static final int const END_VALUE = 100;
 
     public static void gameCalc() {
         var question = "What is the result of the expression?";
@@ -28,7 +28,7 @@ public class Calc {
                     .toString();
 
 
-            solutions[i] = String.valueOf(switch (operator) {
+            solutions[i] = String.valueOf(switch(operator) {
                 case "+" -> num1 + num2;
                 case "-" -> num1 - num2;
                 default -> num1 * num2;

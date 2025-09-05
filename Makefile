@@ -1,28 +1,28 @@
 .DEFAULT_GOAL := build-run
 
 setup:
-	./gradlew wrapper
+	./app/gradlew wrapper
 
 clean:
-	./gradlew clean
+	./app/gradlew clean
 
 build:
-	./gradlew clean build
+	./app/gradlew clean build
 
 install:
-	./gradlew clean install
+	./app/gradlew clean install
 
 run-dist:
-	./build/install/app/bin/app
+	./app/build/install/app/bin/app
 
 run:
-	./gradlew run
+	./app/gradlew run
 
 test:
-	./gradlew test
+	./app/gradlew test
 
 lint:
-	./gradlew checkstyleMain
+	./app/gradlew checkstyleMain
 
 build-run: build run
 

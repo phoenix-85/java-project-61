@@ -7,7 +7,7 @@ import static hexlet.code.Engine.*;
 
 public class Calc {
     private static final int START_VALUE = 1;
-    private static final int END_VALUE = 99;
+    private static final int END_VALUE = 100;
 
     public static void gameCalc() {
         var question = "What is the result of the expression?";
@@ -17,8 +17,8 @@ public class Calc {
         String[] operators = {"+", "-", "*"};
 
         for (var i = 0; i < MAX_ROUNDS; i++) {
-            int num1 = START_VALUE + new Random().nextInt(END_VALUE);
-            int num2 = START_VALUE + new Random().nextInt(END_VALUE);
+            int num1 = new Random().nextInt(START_VALUE, END_VALUE);
+            int num2 = new Random().nextInt(START_VALUE, END_VALUE);
             String operator = operators[new Random().nextInt(operators.length)];
 
             problems[i] = new StringJoiner(" ")

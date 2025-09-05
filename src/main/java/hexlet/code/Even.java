@@ -14,7 +14,7 @@ public class Even {
         String[] solutions = new String[MAX_ROUNDS];
 
         for (var i = 0; i < MAX_ROUNDS; i++) {
-            int num = START_VALUE + new Random().nextInt(END_VALUE);
+            int num = new Random().nextInt(START_VALUE, END_VALUE);
             problems[i] = Integer.toString(num);
             solutions[i] = (num % 2 == 0) ? "yes" : "no";
         }

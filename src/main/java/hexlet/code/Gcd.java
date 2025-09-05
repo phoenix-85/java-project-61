@@ -8,7 +8,7 @@ public class Gcd {
     private static final int START_VALUE = 20;
     private static final int END_VALUE = 79;
 
-    public static int gcd(int a, int b) {
+    private static int gcd(int a, int b) {
         return (b == 0) ? a : gcd(b,a % b);
     }
 
@@ -18,8 +18,8 @@ public class Gcd {
         String[] solutions = new String[MAX_ROUNDS];
 
         for (int i = 0; i < MAX_ROUNDS; i++) {
-            int num1 = START_VALUE + new Random().nextInt(END_VALUE);
-            int num2 = START_VALUE + new Random().nextInt(END_VALUE);
+            int num1 = new Random().nextInt(START_VALUE, END_VALUE);
+            int num2 = new Random().nextInt(START_VALUE, END_VALUE);
             problems[i] = num1 + " " + num2;
 
             solutions[i] = String.valueOf(gcd(num1, num2));
